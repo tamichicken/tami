@@ -1,27 +1,41 @@
-<!-- style.css -->
-<style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     background-color: #fff8e1;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
 }
+
 header {
     background-color: #ffcc00;
     padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
     font-weight: bold;
     color: #333;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
+
+nav ul li a:hover {
+    color: #ff6f00; /* Hover effect for navigation */
+}
+
 .menu-container {
     display: flex;
     flex-wrap: wrap;
@@ -29,22 +43,54 @@ nav ul li a {
     gap: 20px;
     padding: 20px;
 }
+
 .menu-item {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     width: 250px;
-    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
 .menu-item img {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
+
+.menu-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on images */
+}
+
 footer {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 40px;
+    padding: 20px;
     background-color: #ffcc00;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: #333;
 }
 
 /* 默认样式（适用于桌面） */
@@ -52,11 +98,19 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 
 .menu-images img {
   width: 30%; /* 每张图片占据大约30%的宽度 */
   height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-images img:hover {
+  transform: scale(1.05);
 }
 
 /* 针对手机的样式 */
@@ -65,5 +119,3 @@ footer {
     width: 48%; /* 每张图片占据大约48%的宽度，确保两张图片在一行 */
   }
 }
-
-</style>
