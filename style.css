@@ -1,0 +1,30 @@
+<!-- style.css -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff8e1;
+}
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffcc00;
+}
+</style>
