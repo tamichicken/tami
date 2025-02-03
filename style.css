@@ -46,4 +46,24 @@ footer {
     padding: 10px;
     background-color: #ffcc00;
 }
+
+/* 默认样式（适用于桌面） */
+.menu-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu-images img {
+  width: 30%; /* 每张图片占据大约30%的宽度 */
+  height: auto;
+}
+
+/* 针对手机的样式 */
+@media (max-width: 600px) {
+  .menu-images img {
+    width: 48%; /* 每张图片占据大约48%的宽度，确保两张图片在一行 */
+  }
+}
+
 </style>
