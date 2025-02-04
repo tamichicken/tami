@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>哆味炸鶏</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>哆味炸鶏</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>ようこそ、哆味炸鶏へ</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="menu.html">メニュー</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>おすすめフライドチキン</h2>
+  <!-- 非固定头部，动态隐藏/显示 -->
+  <header id="site-header">
+    <div class="header-container">
+      <div class="header-left">
+        <h1>哆味炸鶏</h1>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="news.html">最新情報</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 哆味炸鶏. 全著作権所有.</p>
-    </footer>
+  <main>
+    <!-- 轮播图区域 -->
+    <section class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-slide active">
+          <img src="images/slide1.jpg" alt="Slide 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="images/slide2.png" alt="Slide 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="images/slide3.jpg" alt="Slide 3">
+        </div>
+		<div class="carousel-slide">
+		  <img src="images/slide4.jpg" alt="Slide 4">
+		</div>
+      </div>
+      <button class="carousel-button prev">&#10094;</button>
+      <button class="carousel-button next">&#10095;</button>
+      <div class="carousel-indicators"></div>
+    </section>
+
+    <!-- 跳转到菜单按钮（居中） -->
+    <div class="to-menu">
+      <button onclick="location.href='menu.html'">メニューを見る</button>
+    </div>
+
+    <!-- 最新情報区域 -->
+    <section class="news-section">
+      <h2>最新情報</h2>
+      <ul class="news-list">
+		<li><a href="news/news-detail.html">新メニュー登場！</a></li>
+		<li><a href="news/news-detail1.html">営業時間変更のお知らせ</a></li>
+		<li><a href="news/news-detail2.html">開業時間お知らせ</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 哆味炸鶏. 全著作権所有.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
