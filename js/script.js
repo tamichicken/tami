@@ -11,6 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     lastScrollTop = scrollTop;
   });
+  
+  // 添加触摸事件监听
+  document.querySelector('.header-logo').addEventListener('touchstart', function() {
+    this.classList.add('active');
+  });
+  document.querySelector('.header-logo').addEventListener('touchend', function() {
+    this.classList.remove('active');
+  });
 
   // 轮播图逻辑
   const slides = document.querySelectorAll('.carousel-slide');
