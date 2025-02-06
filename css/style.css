@@ -85,7 +85,8 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 15px;
+  gap: 10px;
+  
 }
 /* 导航菜单悬停效果优化 */
 .header-nav ul li a {
@@ -98,22 +99,12 @@ header {
   overflow: hidden;
   transition: color 0.2s ease;
   padding-left: 5px; 
-  
-  padding: 10px 18px; /* 增大点击区域 */
-  border: 2px solid rgba(255, 255, 255, 0.3); /* 添加半透明边框 */
-  border-radius: 8px; /* 圆角效果 */
-  background: rgba(255, 255, 255, 0.15); /* 半透明背景 */
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 平滑过渡效果 */
 }
 
 .header-nav ul li a:hover {
   color: #fff;
   background-color: rgba(0,0,0,0.3);
   border-radius: 5px;
-  
-  background: rgba(0, 0, 0, 0.25); 
-  border-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* 添加悬浮阴影 */
 }
 
 /* 向下滚动时隐藏头部 */
@@ -330,7 +321,7 @@ main {
 /* 适配移动端导航栏 */
 @media (max-width: 768px) {
   .header-container {
-    padding: 5px 10px; 
+    padding: 5px 8px; 
   }
   .header-nav ul {
     flex-direction: row;
@@ -338,15 +329,14 @@ main {
 	white-space: nowrap;
 	flex-wrap: nowrap;
 	font-size: 0.7rem;
-	gap: 8px;
+	gap: 1px;
   }
   .header-nav ul li {
 	padding-right: 0px;
   }
   
   .header-nav ul li a {
-    padding-left: 1px; 
-	border-width: 1px; /* 减细边框 */
+    padding-left: 3px; 
   }
   
   .menu-container {
